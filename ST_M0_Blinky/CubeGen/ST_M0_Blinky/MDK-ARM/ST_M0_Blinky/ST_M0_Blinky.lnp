@@ -1,0 +1,27 @@
+--cpu Cortex-M0+
+"st_m0_blinky\startup_stm32l031xx.o"
+"st_m0_blinky\stm32l0xx_it.o"
+"st_m0_blinky\stm32l0xx_hal_msp.o"
+"st_m0_blinky\main.o"
+"st_m0_blinky\system_stm32l0xx.o"
+"st_m0_blinky\stm32l0xx_hal_i2c.o"
+"st_m0_blinky\stm32l0xx_hal_flash.o"
+"st_m0_blinky\stm32l0xx_hal_pwr.o"
+"st_m0_blinky\stm32l0xx_hal_pwr_ex.o"
+"st_m0_blinky\stm32l0xx_hal_flash_ex.o"
+"st_m0_blinky\stm32l0xx_hal_gpio.o"
+"st_m0_blinky\stm32l0xx_hal_dma.o"
+"st_m0_blinky\stm32l0xx_hal_rcc.o"
+"st_m0_blinky\stm32l0xx_hal_rcc_ex.o"
+"st_m0_blinky\stm32l0xx_hal_tim_ex.o"
+"st_m0_blinky\stm32l0xx_hal_tim.o"
+"st_m0_blinky\stm32l0xx_hal_i2c_ex.o"
+"st_m0_blinky\stm32l0xx_hal.o"
+"st_m0_blinky\stm32l0xx_hal_uart_ex.o"
+"st_m0_blinky\stm32l0xx_hal_flash_ramfunc.o"
+"st_m0_blinky\stm32l0xx_hal_uart.o"
+"st_m0_blinky\stm32l0xx_hal_cortex.o"
+--library_type=microlib --strict --scatter "ST_M0_Blinky\ST_M0_Blinky.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ST_M0_Blinky.map" -o ST_M0_Blinky\ST_M0_Blinky.axf
